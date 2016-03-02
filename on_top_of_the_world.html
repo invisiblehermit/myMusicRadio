@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My radio</title>
+		<meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+		
+
+		<script>
+			/*
+				VIEWPORT BUG FIX
+				iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+			*/
+			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+		</script>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			<header class="intro">
+				<img class="intro__image" src="img/header02.jpg" alt="Iceland galcier"/>
+
+				<audio preload="auto" controls>
+					<source src="audio/Tim McMorris - On top of the world.mp3">
+					<!-- <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+					<source src="audio/BlueDucks_FourFlossFiveSix.wav"> -->
+				</audio>
+
+				<div class="lyrics">
+					
+						<p>Oh Oh [x4]</P>
+						<p>I’m on top of the world, and now I’m livin’</P>
+						<p>And the good just gets better, keeps on givin’</P>
+						<p>Not even close to the end, it’s just beginnin’</P>
+						<p>Life is getting lighter</P>
+						<p>While the days are getting brighter, yeah</P>
+
+						<p>And it’s all good, I won’t even worry anymore</P>
+						<p>Took all my cares, took them, kicked them all, out the door</P>
+						<p>Go on and try it, come on and tell me what you’re waiting for</P>
+						<p>Move and keep on going, till’ your life is overflowing, yeah</P>
+
+						<p>I do a dance, do a dance of victory</P>
+						<p>Cause now I’m livin’ good, no I’m not livin’ like I used to be</P>
+						<p><p>Not talkin’ bout’ things, talking bout my mind</P>
+						<p>Now I’m free from the worries that I left behind</P>
+
+						<p>I gotta jump for joy, and shout aloud, and make a sound, oh</P>
+						<p>The world can’t stop me now, no</P>
+						<p><p>And on the music I will ride on the beat</P>
+						<p>Play my guitar, while I’m stompin my feet, yeah</P>
+
+						<p>I’m gotta celebrate life</P>
+						<p>And get excited about</P>
+						<p>Good times and good livin</P>
+						<p>Come on and shout it out, (HEY!)</P>
+
+						<p>Take it up, take it over, take it out of control</P>
+						<p>Today I’m freein’ my soul, and now you got me singin’</P>
+						<p><p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+						<p>I’m feelin’ fine, smiling big, feelin’ right like I should</P>
+						<p>Life is better then good, ya, you got me singin’</P>
+						<p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+						<p>I’m standing up, on top of the world tonight</P>
+						<p>And everythings working out, just right</P>
+						<p>And while the world is spinning</P>
+						<p>It’s a brand new beginning</P>
+						<p>I’m here finally winning (HEY!)</P>
+						<p>So, take it up, take it over, take it out of control</P>
+						<p>Today I’m freeing my soul, and now you got me singin</P>
+						<p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+						<p>Oh Oh [x2]
+
+						<p>We gotta be the best, the best we can be</P>
+						<p>And though sometimes we don’t wanna</P>
+						<p>Still we gotta chase our dreams</P>
+						<p>Reach up, and reach high, because we’re gonna pull on through</P>
+						<p>And give it all we got, even though it can seem so hard to</P>
+
+						<p>Catch and make happen, but we can’t start slackin’, come on</P>
+						<p>Do what ya gotta do to fight on</P>
+						<p>So no matter what comes your way</P>
+						<p>Nothin can ruin your day</P>
+						<p>Or even wipe your smile away</P>
+
+						<p>By the time I’m up and outta my bed</P>
+						<p>I got a hundred new ideas floatin’ round in my head</P>
+						<p>With a hope for tomorrow, a dream that I can see</P>
+						<p>Of all the awesome things, the great people we could be</P>
+</P>
+						<p>And maybe by the music or the songs that I sing</P>
+						<p>I’ll change the world with the simple message that I will I bring</P>
+						<p>All I know is that it’s out there, there’s more to discover</P>
+						<p>And a lot of good things, we can learn from one another</P>
+
+						<p>Gotta celebrate life</P>
+						<p>And get excited about</P>
+						<p>Good times and good livin</P>
+						<p>Come on and shout it out, (HEY!)</P>
+
+						<p>Take it up, take it over, take it out of control</P>
+						<p>Today I’m freein’ my soul, and now you got me singin’</P>
+						<p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+						<p>I’m feelin’ fine, smiling big, feelin’ right like I should</P>
+						<p>Life is better then good, ya, you got me singin’</P>
+						<p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+						<p>I’m standing up, on top of the world tonight</P>
+						<p>And everythings working out, just right</P>
+						<p>And while the world is spinning</P>
+						<p>It’s a brand new beginning</P>
+						<p>I’m here finally winning (HEY!)</P>
+						<p>So, take it up, take it over, take it out of control</P>
+						<p>Today I’m freeing my soul, and now you got me singin</P>
+						<p>Oh Oh Oh Oh Oh</P>
+						<p>Oh Oh Oh Oh Oh Whoa</P>
+
+					
+				</div>
+
+				<div class="intro__content">
+					<h1 class="intro__title">On Top Of The World</h1>
+					<div class="intro__subtitle">
+						<div class="intro__description">
+							Tim McMorris
+						</div>
+
+						
+
+						<script src="js/jquery.js"></script>
+						<script src="js/audioplayer.js"></script>
+						<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+						<button class="trigger">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<g class="icon icon--grid">
+									<rect x="32.5" y="5.5" width="22" height="22"/>
+									<rect x="4.5" y="5.5" width="22" height="22"/>
+									<rect x="32.5" y="33.5" width="22" height="22"/>
+									<rect x="4.5" y="33.5" width="22" height="22"/>
+								</g>
+								<g class="icon icon--cross">
+									<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+									<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+								</g>
+							</svg>
+							<span>View content</span>
+						</button>
+					</div>					
+
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+
+
+
+
+
+			<section class="items-wrap">
+				<a href="index.html" class="item">
+					<img class="item__image" src="img/item/item17.jpg" alt="item01"/>
+					<h2 class="item__title">Don't Stop Believing</h2>
+				</a>
+				<a href="live_like_you_were_dying.html" class="item">
+					<img class="item__image" src="img/item/item01.jpg" alt="item02"/>
+					<h2 class="item__title">Live Like You Were Dying</h2>
+				</a>
+				<a href="on_top_of_the_world.html" class="item">
+					<img class="item__image" src="img/item/item03.jpg" alt="item03"/>
+					<h2 class="item__title">Gravity</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item04.jpg" alt="item04"/>
+					<h2 class="item__title">Everthing Trying</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item05.jpg" alt="item05"/>
+					<h2 class="item__title">Cooler Than Me</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item06.jpg" alt="item06"/>
+					<h2 class="item__title">Latch</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item07.jpg" alt="item07"/>
+					<h2 class="item__title">Scientist</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item08.jpg" alt="item08"/>
+					<h2 class="item__title">On The Way Home</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item09.jpg" alt="item09"/>
+					<h2 class="item__title">Speed Limit</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item10.jpg" alt="item10"/>
+					<h2 class="item__title">Waves</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item11.jpg" alt="item11"/>
+					<h2 class="item__title">Sweater Weather</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item12.jpg" alt="item12"/>
+					<h2 class="item__title">Demons</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item13.jpg" alt="item12"/>
+					<h2 class="item__title">You Can't Always Get What You Want</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item14.jpg" alt="item12"/>
+					<h2 class="item__title">Radioactive</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item15.jpg" alt="item12"/>
+					<h2 class="item__title">Atlas</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item16.jpg" alt="item12"/>
+					<h2 class="item__title">Lost Stars</h2>
+				</a>
+
+			</section>
+
+			<section class="related">
+				<p>FIND ME ON : </p>
+				<a href="http://www.invisiblehermit.com">INVISIBLE HERMIT</a>
+				<p>©2006-2015 INVISIBLE HERMIT, Inc. All Rights Reserved.</p>
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				var container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function toggleContent() {
+					if( classie.has( container, 'container--open' ) ) {
+						classie.remove( container, 'container--open' );
+						classie.remove( trigger, 'trigger--active' );
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( container, 'container--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+
+				// For Demo purposes only (prevent jump on click)
+				// [].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			})();
+		</script>
+	</body>
+</html>

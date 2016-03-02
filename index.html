@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My radio</title>
+		<meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+		
+
+		<script>
+			/*
+				VIEWPORT BUG FIX
+				iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+			*/
+			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+		</script>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			<header class="intro">
+				<img class="intro__image" src="img/header01.jpg" alt="Iceland galcier"/>
+
+				<audio preload="auto" controls>
+					<source src="audio/Journey-Don't-Stop-Believing.mp3">
+					<!-- <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+					<source src="audio/BlueDucks_FourFlossFiveSix.wav"> -->
+				</audio>
+
+				<div class="lyrics">
+					
+						<p>Just a small town girl</p>
+						<p>Livin' in a lonely world</p>
+						<p>She took the midnight train</p>
+						<p>Goin' anywhere</p>
+						<p>Just a city boy</p>
+						<p>Born and raised in South Detroit</p>
+						<p>He took the midnight train</p>
+						<p>Goin' anywhere</p>
+						<br>
+						<p>A singer in a smokey room</p>
+						<p>The smell of wine and cheap perfume</p>
+						<p>For a smile they can share the night</p>
+						<p>It goes on and on and on and on</p>
+						<br>
+						<p>Strangers waiting</p>
+						<p>Up and down the boulevard</p>
+						<p>Their shadows searching</p>
+						<p>In the night</p>
+						<p><p>Streetlight people</p>
+						<p>Livin' just to find emotion</p>
+						<p>Hidin' somewhere in the night</p>
+						<br>
+						<p>Workin' hard to get my fill</p>
+						<p>Everybody wants a thrill</p>
+						<p>Payin' anything to roll the dice</p>
+						<p>Just one more time</p>
+						<p>Some will win</p>
+						<p>Some will lose</p>
+						<p>Some were born to sing the blues</p>
+						<p>Oh, the movie never ends</p>
+						<p>It goes on and on and on and on</p>
+						<br>
+						<p>Strangers waiting</p>
+						<p>Up and down the boulevard</p>
+						<p>Their shadows searching</p>
+						<p>In the night</p>
+						<p>Streetlight people</p>
+						<p>Livin' just to find emotion</p>
+						<p>Hidin' somewhere in the night</p>
+						<br>
+						<p>[Instrumental interlude]</p>
+						<br>
+						<p>Don't stop believin'</p>
+						<p>Hold on to that feelin'</p>
+						<p>Streetlight people</p>
+						<p>Don't stop believin'</p>
+						<p>Hold on</p>
+						<p>Streetlight people</p>
+						<p>Don't stop believin'</p>
+						<p>Hold on to that feelin'</p>
+						<p>Streetlight people</p>
+
+					
+				</div>
+
+				<div class="intro__content">
+					<h1 class="intro__title">Don't Stop Believing</h1>
+					<div class="intro__subtitle">
+						<div class="intro__description">
+							Journey
+						</div>
+
+						
+
+						<script src="js/jquery.js"></script>
+						<script src="js/audioplayer.js"></script>
+						<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+						<button class="trigger">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<g class="icon icon--grid">
+									<rect x="32.5" y="5.5" width="22" height="22"/>
+									<rect x="4.5" y="5.5" width="22" height="22"/>
+									<rect x="32.5" y="33.5" width="22" height="22"/>
+									<rect x="4.5" y="33.5" width="22" height="22"/>
+								</g>
+								<g class="icon icon--cross">
+									<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+									<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+								</g>
+							</svg>
+							<span>View content</span>
+						</button>
+					</div>					
+
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+
+
+
+
+
+			<section class="items-wrap">
+				<a href="live_like_you_were_dying.html" class="item">
+					<img class="item__image" src="img/item/item01.jpg" alt="item01"/>
+					<h2 class="item__title">Live Like You Were Dying</h2>
+				</a>
+				
+				<a href="on_top_of_the_world.html" class="item">
+					<img class="item__image" src="img/item/item02.jpg" alt="item02"/>
+					<h2 class="item__title">On Top Of The World</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item03.jpg" alt="item03"/>
+					<h2 class="item__title">Gravity</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item04.jpg" alt="item04"/>
+					<h2 class="item__title">Everthing Trying</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item05.jpg" alt="item05"/>
+					<h2 class="item__title">Cooler Than Me</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item06.jpg" alt="item06"/>
+					<h2 class="item__title">Latch</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item07.jpg" alt="item07"/>
+					<h2 class="item__title">Scientist</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item08.jpg" alt="item08"/>
+					<h2 class="item__title">On The Way Home</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item09.jpg" alt="item09"/>
+					<h2 class="item__title">Speed Limit</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item10.jpg" alt="item10"/>
+					<h2 class="item__title">Waves</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item11.jpg" alt="item11"/>
+					<h2 class="item__title">Sweater Weather</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item12.jpg" alt="item12"/>
+					<h2 class="item__title">Demons</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item13.jpg" alt="item12"/>
+					<h2 class="item__title">You Can't Always Get What You Want</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item14.jpg" alt="item12"/>
+					<h2 class="item__title">Radioactive</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item15.jpg" alt="item12"/>
+					<h2 class="item__title">Atlas</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item16.jpg" alt="item12"/>
+					<h2 class="item__title">Lost Stars</h2>
+				</a>
+
+			</section>
+
+			<section class="related">
+				<p>FIND ME ON : </p>
+				<a href="http://www.invisiblehermit.com">INVISIBLE HERMIT</a>
+				<p>©2006-2015 INVISIBLE HERMIT, Inc. All Rights Reserved.</p>
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				var container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function toggleContent() {
+					if( classie.has( container, 'container--open' ) ) {
+						classie.remove( container, 'container--open' );
+						classie.remove( trigger, 'trigger--active' );
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( container, 'container--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+
+				// For Demo purposes only (prevent jump on click)
+				// [].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			})();
+		</script>
+	</body>
+</html>

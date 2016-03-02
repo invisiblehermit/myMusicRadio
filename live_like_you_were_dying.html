@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My radio</title>
+		<meta name="description" content="A simple grid layout with an initial fullscreen intro" />
+		<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout-simple.css" />
+		
+
+		<script>
+			/*
+				VIEWPORT BUG FIX
+				iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+			*/
+			(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+		</script>
+
+	</head>
+	<body>
+		<div id="container" class="container">
+			<header class="intro">
+				<img class="intro__image" src="img/header17.jpg" alt="Iceland galcier"/>
+
+				<audio preload="auto" controls>
+					<source src="audio/David St. Romain - Live Like You Were Dying.mp3">
+					<!-- <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+					<source src="audio/BlueDucks_FourFlossFiveSix.wav"> -->
+				</audio>
+
+				<div class="lyrics">
+					
+						<p>He said: "I was in my early forties,</p>
+						<p>"With a lot of life before me,</p>
+						<p>"An' a moment came that stopped me on a dime.</p>
+						<p>"I spent most of the next days,</p>
+						<p>"Looking at the x-rays,</p>
+						<p>"An' talking 'bout the options an' talkin’ ‘bout sweet time."</p>
+						<p>I asked him when it sank in,</p>
+						<p>That this might really be the real end?</p></p>
+						<p>How’s it hit you when you get that kind of news?</p>
+						<p>Man whatcha do? </p>
+						<br>
+						<p>An' he said: "I went sky diving, I went rocky mountain climbing,</p>
+						<p>"I went two point seven seconds on a bull named Fu Man Chu.</p>
+						<p>"And I loved deeper and I spoke sweeter,</p>
+						<p>"And I gave forgiveness I'd been denying."</p>
+						<p>An' he said: "Some day, I hope you get the chance,</p>
+						<p>"To live like you were dyin'." </p>
+						<br>
+						<p>He said "I was finally the husband,</p>
+						<p><p><p>"That most the time I wasn’t.</p>
+						<p><p>"An' I became a friend a friend would like to have.</p>
+						<p>"And all of a sudden goin' fishin’,</p>
+						<p>"Wasn’t such an imposition,</p>
+						<p>"And I went three times that year I lost my Dad.</p>
+						<p>"Well, I finally read the Good Book,</p>
+						<p>"And I took a good long hard look,</p>
+						<p>"At what I'd do if I could do it all again,</p>
+						<p>"And then: </p>
+						<br>
+						<p>"I went sky diving, I went rocky mountain climbing,</p>
+						<p>"I went two point seven seconds on a bull named Fu Man Chu.</p>
+						<p>"And I loved deeper and I spoke sweeter,</p>
+						<p>"And I gave forgiveness I'd been denying."</p>
+						<p>An' he said: "Some day, I hope you get the chance,</p>
+						<p>"To live like you were dyin'." </p>
+						<br>
+						<p>Like tomorrow was a gift,</p>
+						<p>And you got eternity,</p>
+						<p>To think about what you’d do with it.</p>
+						<p>An' what did you do with it?</p>
+						<p>An' what can I do with it?</p>
+						<p>An' what would I do with it? </p>
+						<br>
+						<p>"Sky diving, I went rocky mountain climbing,</p>
+						<p>"I went two point seven seconds on a bull named Fu Man Chu.</p>
+						<p>"And then I loved deeper and I spoke sweeter,</p>
+						<p>"And I watched Blue Eagle as it was flyin'."</p>
+						<p>An' he said: "Some day, I hope you get the chance,</p>
+						<p>"To live like you were dyin'." </p>
+						<br>
+						<p>"To live like you were dyin'."</p>
+						<p>"To live like you were dyin'."</p>
+						<p>"To live like you were dyin'."</p>
+						<p>"To live like you were dyin'." </p>
+
+					
+				</div>
+
+				<div class="intro__content">
+					<h1 class="intro__title">Live Like You Were Dying</h1>
+					<div class="intro__subtitle">
+						<div class="intro__description">
+							David St. Romain
+						</div>
+
+						
+
+						<script src="js/jquery.js"></script>
+						<script src="js/audioplayer.js"></script>
+						<script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+						<button class="trigger">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<g class="icon icon--grid">
+									<rect x="32.5" y="5.5" width="22" height="22"/>
+									<rect x="4.5" y="5.5" width="22" height="22"/>
+									<rect x="32.5" y="33.5" width="22" height="22"/>
+									<rect x="4.5" y="33.5" width="22" height="22"/>
+								</g>
+								<g class="icon icon--cross">
+									<line x1="4.5" y1="55.5" x2="54.953" y2="5.046"/>
+									<line x1="54.953" y1="55.5" x2="4.5" y2="5.047"/>
+								</g>
+							</svg>
+							<span>View content</span>
+						</button>
+					</div>					
+
+				</div><!-- /intro__content -->
+			</header><!-- /intro -->
+
+
+
+
+
+			<section class="items-wrap">
+				<a href="index.html" class="item">
+					<img class="item__image" src="img/item/item17.jpg" alt="item01"/>
+					<h2 class="item__title">Don't Stop Believing</h2>
+				</a>
+				<a href="on_top_of_the_world.html" class="item">
+					<img class="item__image" src="img/item/item02.jpg" alt="item02"/>
+					<h2 class="item__title">On Top Of the World</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item03.jpg" alt="item03"/>
+					<h2 class="item__title">Gravity</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item04.jpg" alt="item04"/>
+					<h2 class="item__title">Everthing Trying</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item05.jpg" alt="item05"/>
+					<h2 class="item__title">Cooler Than Me</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item06.jpg" alt="item06"/>
+					<h2 class="item__title">Latch</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item07.jpg" alt="item07"/>
+					<h2 class="item__title">Scientist</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item08.jpg" alt="item08"/>
+					<h2 class="item__title">On The Way Home</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item09.jpg" alt="item09"/>
+					<h2 class="item__title">Speed Limit</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item10.jpg" alt="item10"/>
+					<h2 class="item__title">Waves</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item11.jpg" alt="item11"/>
+					<h2 class="item__title">Sweater Weather</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item12.jpg" alt="item12"/>
+					<h2 class="item__title">Demons</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item13.jpg" alt="item12"/>
+					<h2 class="item__title">You Can't Always Get What You Want</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item14.jpg" alt="item12"/>
+					<h2 class="item__title">Radioactive</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item15.jpg" alt="item12"/>
+					<h2 class="item__title">Atlas</h2>
+				</a>
+				<a href="#" class="item">
+					<img class="item__image" src="img/item/item16.jpg" alt="item12"/>
+					<h2 class="item__title">Lost Stars</h2>
+				</a>
+
+			</section>
+
+			<section class="related">
+				<p>FIND ME ON : </p>
+				<a href="http://www.invisiblehermit.com">INVISIBLE HERMIT</a>
+				<p>©2006-2015 INVISIBLE HERMIT, Inc. All Rights Reserved.</p>
+			</section>
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+				var container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function toggleContent() {
+					if( classie.has( container, 'container--open' ) ) {
+						classie.remove( container, 'container--open' );
+						classie.remove( trigger, 'trigger--active' );
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( container, 'container--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+
+				// For Demo purposes only (prevent jump on click)
+				// [].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			})();
+		</script>
+	</body>
+</html>
